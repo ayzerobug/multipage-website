@@ -3,9 +3,73 @@
 
 <head>
     <title>About Us</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .highlight {
+            background-color: yellow;
+            color: black;
+        }
+
+        .font-bold {
+            font-weight: bold;
+        }
+
+        #free-wifi {
+            border-color: blue;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .box {
+            margin: 20px;
+            padding: 10px;
+            width: 300px;
+            height: 300px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: yellow;
+            background-color: lightblue;
+            text-align: center;
+            border-radius: 20px;
+        }
+
+        .btn {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .btn-primary {
+            background-color: rgb(25, 147, 208);
+            color: white;
+        }
+
+        .btn-danger {
+            background-color: red;
+            color: white;
+        }
+
+        .btn-warning {
+            background-color: rgb(216, 219, 20);
+            color: black;
+        }
+    </style>
 </head>
 
-<body>
+<body class="dark">
     <header>
         <h1>My Website</h1>
         <nav>
@@ -18,6 +82,28 @@
         <section>
             <h2>About Us Page</h2>
             <p>Content here...</p>
+        </section>
+
+        <div class="box">
+            <p>Ex excepteur sunt quis velit irure nulla. Consequat sit ad irure magna adipisicing reprehenderit tempor.
+                Excepteur irure esse nulla eu. Enim tempor ullamco dolore cupidatat Lorem voluptate incididunt dolor.
+            </p>
+            <button class="btn btn-primary">Primary Button</button>
+            <button class="btn btn-danger">Danger Button</button>
+            <button class="btn btn-warning">Warning Button</button>
+        </div>
+
+        <button class="btn">Click me</button>
+
+        <section>
+            <h3>Highlights</h3>
+
+            <ul>
+                <li class="highlight font-bold" id="free-wifi" style="font-size: 30px;">Free Wifi</li>
+                <li class="">24/7 Power</li>
+                <li class="highlight">Clean Water</li>
+                <li class="">Good Roads</li>
+            </ul>
         </section>
     </main>
 
