@@ -3,70 +3,10 @@
 
 <head>
     <title>About Us</title>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .highlight {
-            background-color: yellow;
-            color: black;
-        }
-
-        .font-bold {
-            font-weight: bold;
-        }
-
-        #free-wifi {
-            border-color: blue;
-            border-width: 2px;
-            border-style: solid;
-        }
-
-        .dark {
-            background-color: black;
-            color: white;
-        }
-
-        .box {
-            margin: 20px;
-            padding: 10px;
-            width: 300px;
-            height: 300px;
-            border-width: 2px;
-            border-style: solid;
-            border-color: yellow;
-            background-color: lightblue;
-            text-align: center;
-            border-radius: 20px;
-        }
-
-        .btn {
-            padding-top: 10px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            padding-left: 20px;
-            margin-top: 20px;
-            border: none;
-            border-radius: 6px;
-        }
-
-        .btn-primary {
-            background-color: rgb(25, 147, 208);
-            color: white;
-        }
-
-        .btn-danger {
-            background-color: red;
-            color: white;
-        }
-
-        .btn-warning {
-            background-color: rgb(216, 219, 20);
-            color: black;
-        }
-    </style>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="dark">
@@ -75,7 +15,7 @@
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-        </nav>
+       body </nav>
     </header>
 
     <main>
@@ -85,12 +25,21 @@
         </section>
 
         <div class="box">
-            <p>Ex excepteur sunt quis velit irure nulla. Consequat sit ad irure magna adipisicing reprehenderit tempor.
+            <p class="code">Ex excepteur sunt quis velit irure nulla. Consequat sit ad irure magna adipisicing reprehenderit tempor.
                 Excepteur irure esse nulla eu. Enim tempor ullamco dolore cupidatat Lorem voluptate incididunt dolor.
             </p>
             <button class="btn btn-primary">Primary Button</button>
             <button class="btn btn-danger">Danger Button</button>
             <button class="btn btn-warning">Warning Button</button>
+            <button class="btn btn-custom">Custom Button Hex</button>
+            <button class="btn btn-custom-rgb">Cutom Button RGB</button>
+        </div>
+
+        <div class="box">
+            <p class="thin">Thin Font</p>
+            <p class="normal">Normal Font</p>
+            <p class="bold">Bold Font</p>
+            <p class="black">Black Font</p>
         </div>
 
         <button class="btn">Click me</button>

@@ -1,0 +1,119 @@
+/* @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@font-face {
+    font-family: "customfont";
+    src: url("UnifrakturMaguntia-Regular.ttf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  color: blanchedalmond;
+}
+
+.code {
+  font-family: "customfont", cursive;
+  color: #000000;
+}
+
+.highlight {
+  background-color: yellow;
+  color: black;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+
+#free-wifi {
+  border-color: blue;
+  border-width: 2px;
+  border-style: solid;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.box {
+  margin: 20px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: yellow;
+  background-color: lightblue;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.btn {
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  background-color: rgb(25, 147, 208);
+  color: white;
+}
+
+.btn-danger {
+  background-color: red;
+  color: white;
+}
+
+.btn-warning {
+  background-color: rgb(216, 219, 20);
+  color: black;
+}
+
+/* Hex Colors Started */
+
+.btn-custom {
+  background-color: #461780;
+  color: #ffffff;
+}
+
+/* Hex Colors Ended */
+
+/* RGB Colors Started */
+
+.btn-custom-rgb {
+  background-color: rgb(35, 96, 18);
+  color: rgb(255, 255, 255);
+}
+
+/* RGB Colors Ended */
