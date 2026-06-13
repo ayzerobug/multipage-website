@@ -1,9 +1,9 @@
 /* @import url("https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @font-face {
-    font-family: "customfont";
-    src: url("UnifrakturMaguntia-Regular.ttf");
+  font-family: "customfont";
+  src: url("UnifrakturMaguntia-Regular.ttf");
 }
 
 * {
@@ -11,13 +11,42 @@
   padding: 0px;
 }
 
+.no-highlight {
+  border: 2px solid yellow;
+}
+
+h3 {
+  border: 1px solid blue !important;
+}
+
+/* The element must match both selector (a  .no-hightlight) */
+a.no-highlight {
+  color: green;
+}
+
+/* Element must match at least one of the selectors */
+p,
+a {
+  color: red;
+}
+
+a {
+}
+.anything {
+}
+
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 h1 {
   font-family: Georgia, serif;
   color: blanchedalmond;
+}
+
+p {
+  line-height: 24px;
+  text-align: justify;
 }
 
 .code {
@@ -35,21 +64,52 @@ h1 {
 }
 
 .thin {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .normal {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .bold {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .black {
-    font-weight: 900;
+  font-weight: 900;
 }
 
+.text-xs {
+  font-size: 12px;
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-normal {
+  font-size: 16px;
+}
+
+.text-lg {
+  font-size: 18px;
+}
+
+.text-xl {
+  font-size: 20px;
+}
+
+.text-2xl {
+  font-size: 30px;
+}
+
+.text-3xl {
+  font-size: 24px;
+}
+
+.text-5xl {
+  font-size: 40px;
+}
 
 #free-wifi {
   border-color: blue;
@@ -117,3 +177,5 @@ h1 {
 }
 
 /* RGB Colors Ended */
+
+/* If you have a conflicting stlye in your class, it will override the one in the tag */
