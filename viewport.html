@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <style>
-            * {
-                padding: 0px;
-                margin: 0px;
-                box-sizing: border-box;
-            }
-        </style>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
 
-    <body>
-        <div style="width: 500px;">
-            <div style="background-color: brown; height: 100vh; width: 100vw;">
+        .page-container {
+            background-color: brown;
+            height: 40px;
+            /* min-width: 200px;
+            width: 1000px;
+            max-width: 80vw; */
+        }
 
-            </div>
+        div {
+            display: block;
+        }
+
+        .bg-purple {
+            background-color: purple;
+            height: 30px;
+            margin-top: 0.7rem;
+        }
+
+        .block {
+            display: block;
+            width: 100%;
+        }
+
+        .inline {
+            display: inline;
+        }
+
+        .inline-block{
+            display: inline-block;
+        }
+
+        img {
+            height: 5rem;
+            width: 5rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="profile.png" />
+        <img src="profile.png" />
+        <div class="page-container bg-purple hidden" style="width: 500px;">
+            Box One
         </div>
-    </body>
+        <div class="page-container bg-purple inline">
+            Box Two
+        </div>
+        <div class="page-container bg-purple inline">
+            Box Three
+        </div>
+
+        <p class="bg-purple">Hello</p>
+        <br>
+        <br>
+        <span class="bg-purple">Span One</span>
+        <span class="bg-purple">Span Two</span>
+        <button class="bg-purple block">Button One</button>
+        <input placeholder="Enter your email" type="email" class="bg-purple block" />
+        <input placeholder="Enter your name" type="name" class="bg-purple block" />
+    </div>
+</body>
 
 </html>

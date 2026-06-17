@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Positions</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .box {
+            position: relative;
+            background-color: firebrick;
+            width: 2rem;
+            min-height: 2rem;
+            top: -0.6rem;
+            left: 2rem;
+        }
+
+        .feature-container {
+            background-color: rgb(217, 217, 217);
+            width: 20rem;
+            height: 20rem;
+            margin: 1rem;
+            padding: 1rem;
+            border: 1px grey solid;
+            border-radius: 1rem;
+            position: relative;
+        }
+
+        .feature-container img {
+            width: 100%;
+            border-radius: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-container h5 {
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-container .badge {
+            background-color: red;
+            font-size: 0.8rem;
+            color: white;
+            padding: 2px 8px;
+            display: inline-block;
+            border-radius: 1.4rem;
+            position: absolute;
+            top: 1.2rem;
+            right: 1.2rem;
+        }
+
+        .chat-us {
+            background-color: rgb(6, 83, 58);
+            color: #ffffff;
+            padding: 0.4rem 0.8rem;
+            font-size: 0.8rem;
+            display: inline-block;
+            border-radius: 1rem;
+            position: fixed;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        header {
+            padding: 0.6rem 3rem;
+            position: fixed;
+            z-index: 999;
+            background-color: #ffffff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            display: block;
+            top: 0px;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <p>Brand Logo</p>
+        <p>Some Navs</p>
+        <p>Some CTA</p>
+    </header>
+    <div style="margin-top: 3rem">
+        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
+            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
+            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
+            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
+            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
+    </div>
+    <div style="position: relative; border: 1px blue solid;">
+        <div class="box">
+
+        </div>
+        <div class="feature-container">
+            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
+            <h5>Fast Internet</h5>
+            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
+            <div class="badge">🔥 Hot</div>
+        </div>
+    </div>
+    <div>
+        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
+            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
+            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
+            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
+            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
+    </div>
+    <div style="position: relative; border: 1px blue solid;">
+        <div class="box">
+
+        </div>
+        <div class="feature-container">
+            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
+            <h5>Fast Internet</h5>
+            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
+            <div class="badge">🔥 Hot</div>
+        </div>
+    </div>
+    <div>
+        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
+            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
+            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
+            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
+            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
+    </div>
+    <div style="position: relative; border: 1px blue solid;">
+        <div class="box">
+
+        </div>
+        <div class="feature-container">
+            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
+            <h5>Fast Internet</h5>
+            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
+            <div class="badge">🔥 Hot</div>
+        </div>
+    </div>
+    <div>
+        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
+            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
+            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
+            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
+            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
+    </div>
+    <div style="position: relative; border: 1px blue solid;">
+        <div class="box">
+
+        </div>
+        <div class="feature-container">
+            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
+            <h5>Fast Internet</h5>
+            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
+            <div class="badge">🔥 Hot</div>
+        </div>
+    </div>
+    <div class="chat-us">
+        💬 Chat Us
+    </div>
+</body>
+
+</html>
