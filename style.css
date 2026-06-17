@@ -9,6 +9,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 .no-highlight {
@@ -100,7 +101,7 @@ p {
 }
 
 .text-2xl {
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .text-3xl {
@@ -122,10 +123,31 @@ p {
   color: white;
 }
 
-.box {
+#margin-sample {
   margin: 20px;
-  padding: 10px;
-  width: 300px;
+
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+
+  /* Top Right Bottom Left */
+  margin: 10px 15px 20px 25px;
+
+  /* Top Right Bottom Left */
+  margin: 10px 25px 10px 25px;
+
+  /* Vertical Horizontal */
+  margin: 10px 25px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  margin: 0 auto;
+  padding: 10px 10px 5px 10px;
+  width: 80%;
   height: 300px;
   border-width: 2px;
   border-style: solid;
@@ -179,3 +201,36 @@ p {
 /* RGB Colors Ended */
 
 /* If you have a conflicting stlye in your class, it will override the one in the tag */
+
+.parent-container {
+  background-color: #461780;
+  height: 100px;
+  width: 400px;
+  border: 2px #ffbf00 solid;
+  margin: 20px;
+  display: flex;
+}
+
+.child-container {
+  background-color: #ffffff;
+  height: 100px;
+  width: 200px;
+  padding: 20px;
+  border: 2px #0000ff solid;
+}
+
+.sized-parent-box {
+  width: 800px;
+  margin: 10px auto;
+  background: aqua;
+  height: 500px;
+  width: 600px;
+  padding: 40px 0px;
+}
+
+.sized-child-box {
+  background-color: white;
+  width: 30%;
+  height: 100px;
+  margin: 0 auto;
+}
