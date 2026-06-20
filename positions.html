@@ -3,6 +3,7 @@
 
 <head>
     <title>HTML Positions</title>
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <style>
         * {
             padding: 0;
@@ -73,10 +74,15 @@
             position: fixed;
             z-index: 999;
             background-color: #ffffff;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             width: 100%;
-            display: block;
+            /* display: block; */
             top: 0px;
+            display: flex;
+            flex-direction: row;
+            border: 1px red solid;
+            justify-content: space-between;
+            align-items: center;
         }
 
         header * {
@@ -86,13 +92,87 @@
         .ml-auto {
             margin-left: auto;
         }
+
+        .flex {
+            display: flex;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .logo-gap {
+            gap: 0.2rem;
+        }
+
+        .nav-gap {
+            gap: 1.2rem;
+        }
+
+        .no-decoration {
+            text-decoration: none;
+        }
+
+        .foreground-black {
+            color: #000000;
+        }
+
+        .nav-item {
+            color: #000000;
+            padding: 3px 10px;
+            border-radius: 6px;
+        }
+
+        .nav-item:hover {
+            color: #ffffff;
+            background-color: red;
+        }
+
+        .nav-item:active {
+            color: #ff0000 !important;
+        }
+
+        input:focus {
+            border: 1px blue solid;
+        }
+
+        li:first-child {
+            background-color: green;
+        }
+
+        li:last-child {
+            background-color: burlywood;
+        }
+
+        li:nth-child(4) {
+            background-color: violet;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <p>Brand Logo</p>
-        <p>Some Navs</p>
+        <a href="/" class="flex items-center logo-gap no-decoration foreground-black">
+            <img src="https://s3-alpha.figma.com/hub/file/1913095808/a7bdc469-cd70-4ea1-bb57-b59204ad8182-cover.png"
+                alt="Brand Logo" width="32" />
+            <p>Yangaplug</p>
+        </a>
+        <nav>
+            <ul class="flex nav-gap items-center">
+                <li>
+                    <a href="/" class="nav-item no-decoration">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-item no-decoration">About Us</a>
+                </li>
+                <li>
+                    <a href="contact-us.html" class="nav-item no-decoration">Contact Us</a>
+                </li>
+                <li>
+                    <a href="contact-us.html" class="nav-item no-decoration">Last Child</a>
+                </li>
+            </ul>
+        </nav>
         <p>Some CTA</p>
     </header>
     <div style="margin-top: 3rem">
@@ -112,6 +192,10 @@
             <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
             <div class="badge">🔥 Hot</div>
         </div>
+
+        <input placeholder="Enter your name" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="tel" placeholder="Enter your phone number" />
     </div>
     <div>
         <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
@@ -168,7 +252,7 @@
         </div>
     </div>
     <div class="chat-us">
-        💬 Chat Us
+        <i class="hgi hgi-stroke hgi-rounded hgi-message-01" style="font-size: 1.2em; color: #ffffff;"></i> Chat Us
     </div>
 </body>
 
