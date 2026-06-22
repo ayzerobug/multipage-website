@@ -121,10 +121,19 @@
             color: #000000;
             padding: 3px 10px;
             border-radius: 6px;
+            /* transition: background-color 0.3s ease;
+            transition: color 0.3s ease; */
+            transition: all 300ms ease;
         }
+
+        /* 
+        1000 milliseconds - 1 Second
+        60 second - 1 Minutes
+        60 minutes - 1 hour */
 
         .nav-item:hover {
             color: #ffffff;
+            padding: 20px;
             background-color: red;
         }
 
@@ -146,6 +155,40 @@
 
         li:nth-child(4) {
             background-color: violet;
+        }
+
+        .gap-sm {
+            gap: 0.6rem;
+        }
+
+        .container {
+            padding: 0px 4rem;
+            margin-top: 1rem;
+            display: grid;
+            /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+            /* First column twice as wide */
+            /* grid-template-columns: 250px 1fr; */
+            /* fixed sidebar, flexible content */
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px 6px;
+            /* row-gap: 30px;
+            column-gap: 20px; */
+        }
+
+        .container div {
+            background-color: #FF3256;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem 0;
+            border-radius: 0.4rem;
+        }
+
+        .container #item-5 {
+            grid-column: span 3;
+        }
+
+        .container #item-12 {
+            grid-column: span 4;
         }
     </style>
 </head>
@@ -182,28 +225,8 @@
             reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
             Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
     </div>
-    <div style="position: relative; border: 1px blue solid;">
-        <div class="box">
 
-        </div>
-        <div class="feature-container">
-            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
-            <h5>Fast Internet</h5>
-            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
-            <div class="badge">🔥 Hot</div>
-        </div>
 
-        <input placeholder="Enter your name" />
-        <input type="email" placeholder="Enter your email" />
-        <input type="tel" placeholder="Enter your phone number" />
-    </div>
-    <div>
-        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
-            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
-            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
-            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
-            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
-    </div>
     <div style="position: relative; border: 1px blue solid;">
         <div class="box">
 
@@ -215,44 +238,24 @@
             <div class="badge">🔥 Hot</div>
         </div>
     </div>
-    <div>
-        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
-            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
-            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
-            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
-            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
+    <div class="chat-us flex gap-sm">
+        <i class="hgi hgi-stroke hgi-rounded hgi-message-01" style="font-size: 1.2em; color: #ffffff;"></i>
+        <p>Chat Us</p>
     </div>
-    <div style="position: relative; border: 1px blue solid;">
-        <div class="box">
 
-        </div>
-        <div class="feature-container">
-            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
-            <h5>Fast Internet</h5>
-            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
-            <div class="badge">🔥 Hot</div>
-        </div>
-    </div>
-    <div>
-        <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
-            ullamco incididunt aute aliqua eu nulla exercitation ea ut. Culpa est esse culpa adipisicing. Consequat
-            excepteur ut ea consequat voluptate aute exercitation commodo sint dolore laborum cupidatat commodo
-            reprehenderit. Id excepteur adipisicing eu nisi elit dolore. Consectetur nostrud veniam occaecat dolore ea.
-            Cillum irure minim mollit consequat ad sit non esse eiusmod consectetur cupidatat.</p>
-    </div>
-    <div style="position: relative; border: 1px blue solid;">
-        <div class="box">
-
-        </div>
-        <div class="feature-container">
-            <img src="https://images.unsplash.com/photo-1773332589460-5a5d43c80f5b?q=80&w=2070&auto=format&fit=crop" />
-            <h5>Fast Internet</h5>
-            <p>Occaecat non id ea nostrud non esse proident. Sunt in aute ut officia labore fugiat.</p>
-            <div class="badge">🔥 Hot</div>
-        </div>
-    </div>
-    <div class="chat-us">
-        <i class="hgi hgi-stroke hgi-rounded hgi-message-01" style="font-size: 1.2em; color: #ffffff;"></i> Chat Us
+    <div class="container">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div id="item-5">Item 5</div>
+        <div>Item 6</div>
+        <div>Item 7</div>
+        <div>Item 8</div>
+        <div>Item 9</div>
+        <div>Item 10</div>
+        <div>Item 11</div>
+        <div id="item-12">Item 12</div>
     </div>
 </body>
 
