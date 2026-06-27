@@ -3,6 +3,7 @@
 
 <head>
     <title>HTML Positions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <style>
         * {
@@ -190,6 +191,104 @@
         .container #item-12 {
             grid-column: span 4;
         }
+
+        .nav-cta {
+            padding: 10px;
+            min-width: 8rem;
+            border: none;
+            background-color: rgb(80, 160, 1);
+            color: #ffff;
+            font-size: 1rem;
+            border-radius: 8px;
+        }
+
+        header .icon-btn {
+            border: none;
+            background-color: transparent;
+            font-size: 2rem;
+            display: none;
+        }
+
+        .mobile-nav {
+            background-color: rgba(0, 0, 0, 0.794);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            display: none;
+            justify-content: end;
+        }
+
+        .mobile-nav-container {
+            background-color: white;
+            width: 16rem;
+            height: 100vh;
+            padding: 3rem 0;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            padding: 0.8rem 10px;
+        }
+
+        @media (max-width: 768px) {
+            header nav {
+                display: none;
+            }
+
+            nav ul li {
+                width: 100%;
+            }
+
+            header {
+                padding: 0.6rem 0.65rem;
+            }
+
+            header .icon-btn {
+                display: inline;
+            }
+
+            header .nav-cta {
+                display: none;
+            }
+
+            .container {
+                padding: 0px 1rem;
+                grid-template-columns: 1fr 1fr !important;
+            }
+
+            .container #item-5 {
+                grid-column: span 2;
+            }
+
+            .container #item-12 {
+                grid-column: span 2;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: start;
+            }
+
+            .nav-cta {
+                margin: 3rem auto;
+                display: block;
+                border-radius: 3rem;
+                width: calc(100% - 10px);
+            }
+
+            /* .mobile-nav {
+                display: flex;
+            } */
+        }
     </style>
 </head>
 
@@ -201,7 +300,7 @@
             <p>Yangaplug</p>
         </a>
         <nav>
-            <ul class="flex nav-gap items-center">
+            <ul>
                 <li>
                     <a href="/" class="nav-item no-decoration">Home</a>
                 </li>
@@ -216,7 +315,10 @@
                 </li>
             </ul>
         </nav>
-        <p>Some CTA</p>
+        <button class="nav-cta">Join Us</button>
+        <button class="icon-btn">
+            <i class="hgi hgi-stroke hgi-rounded hgi-menu-01"></i>
+        </button>
     </header>
     <div style="margin-top: 3rem">
         <p>Excepteur sit consequat anim culpa sunt commodo anim elit reprehenderit. Mollit consequat excepteur aliquip
@@ -256,6 +358,29 @@
         <div>Item 10</div>
         <div>Item 11</div>
         <div id="item-12">Item 12</div>
+    </div>
+
+    <div class="mobile-nav">
+        <div class="mobile-nav-container">
+            <nav>
+                <ul class="">
+                    <li>
+                        <a href="/" class="nav-item no-decoration">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-item no-decoration">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="nav-item no-decoration">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" class="nav-item no-decoration">Last Child</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="nav-cta">Join Us</button>
+        </div>
     </div>
 </body>
 
