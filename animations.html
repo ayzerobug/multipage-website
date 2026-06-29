@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                background-color: red;
+            }
+
+            50% {
+                transform: scale(1.2);
+                background-color: blue;
+            }
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+
+
+        .card {
+            height: 20rem;
+            width: 20rem;
+            margin: 10rem auto;
+            border: 1px solid orangered;
+            /* animation-name: pulse;
+            animation-duration: 1.5s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-delay: 5s; */
+            animation: pulse 1.5s ease infinite;
+        }
+
+        .loader {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 10rem;
+            margin: 10rem auto;
+            border: 1px solid black;
+            border-top-color: transparent;
+            animation: spin 1.5s ease infinite;
+        }
+
+        .bouncer {
+            height: 10rem;
+            width: 10rem;
+            border-radius: 10rem;
+            margin: 10rem auto;
+            background-color: orange;
+            animation: bounce 1s ease infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+
+    </div>
+
+    <div class="loader"></div>
+
+    <div class="bouncer"></div>
+</body>
+
+</html>
