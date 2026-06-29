@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #C8410B;
+            --background: #f5e5de;
+            --border-radius: 0.5rem;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+        .ubuntu-light {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        .ubuntu-regular {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ubuntu-medium {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .ubuntu-bold {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .ubuntu-light-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        .ubuntu-regular-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .ubuntu-medium-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 500;
+            font-style: italic;
+        }
+
+        .ubuntu-bold-italic {
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 700;
+            font-style: italic;
+        }
+
+
+        body {
+            background-color: var(--background);
+            font-family: "Ubuntu", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            overflow: hidden;
+        }
+
+        .form-layout {
+            padding: 1.4rem;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 2rem 1.2rem;
+            border-radius: 16px;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: 2rem;
+        }
+
+        .form-input {
+            width: 100%;
+            font-size: 1rem;
+            padding: 0.8rem 1rem;
+            background-color: #f8f2f0;
+            border: none;
+            border-radius: var(--border-radius);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+        }
+
+        .form-title {
+            font-size: 1.6rem;
+        }
+
+        .submit-btn {
+            background-color: var(--primary);
+            color: #ffffff;
+            font-size: 1rem;
+            padding: 0.8rem;
+            border: none;
+            width: 100%;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+        }
+
+        .brand-logo {
+            max-width: 200px;
+            margin: 0px auto;
+        }
+
+        form a {
+            color: var(--primary);
+            text-align: right;
+            display: block;
+        }
+
+        .left {
+            display: none;
+        }
+
+        .testimony-card {
+            width: 16rem;
+            padding: 1rem;
+            border-radius: 0.6rem;
+            background-color: #fdf9f7;
+            flex-shrink: 0;
+        }
+
+        .testimony-card .author-img {
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            object-fit: cover;
+        }
+
+        .testimony-card .content {
+            font-size: 0.8rem;
+            line-height: 1.2rem;
+            text-wrap: balance;
+            max-height: 3.6rem;
+            overflow: hidden;
+        }
+
+        div.author {
+            display: flex;
+            align-items: center;
+            margin-top: 0.8rem;
+            gap: var(--spacing-sm);
+        }
+
+        p.author {
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.3rem;
+        }
+
+        p.author-role {
+            font-size: 0.6rem;
+            color: #1a1a1a;
+        }
+
+        .testimonies {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0px 10px 10px;
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+            gap: var(--spacing-sm);
+            scrollbar-width: none;
+        }
+
+        /* .testimonies::-webkit-scrollbar{
+            display: none;
+        } */
+
+        @media (min-width: 768px) {
+            body {
+                display: flex;
+            }
+
+            .left,
+            .right {
+                flex: 1;
+            }
+
+            .left {
+                display: block;
+                background-image: url("assets/images/auth-layout-img.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .left .branding {
+                background-color: rgba(0, 0, 0, 0.732);
+                width: 100%;
+                height: 100%;
+                padding: 1.6rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .form-container {
+                min-width: 25rem;
+                margin: 0px auto;
+            }
+
+            .logo-container {
+                display: flex;
+                gap: var(--spacing-sm);
+                max-width: 200px;
+                color: #ffffff;
+            }
+
+            .logo-container .icon {
+                max-width: 60px;
+                object-fit: contain;
+            }
+
+            .logo-title {
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            .brand-logo {
+                display: none;
+            }
+
+            .brand-title {
+                color: var(--primary);
+            }
+
+            .brand-description {
+                color: #ffffff;
+                text-wrap: balance;
+                margin-top: 0.8rem;
+                line-height: 1.6rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <div class="branding">
+            <div class="logo-container">
+                <img src="/assets/images/icon.png" class="icon" alt="Amber Logistics" />
+                <div>
+                    <p class="logo-title">AMBER</p>
+                    <p>Logistics</p>
+                </div>
+            </div>
+            <div>
+                <h1 class="brand-title">Delivering Beyond Expectations</h1>
+                <p class="brand-description">Your deliveries deserve a logistics partner you can trust. We simplify
+                    shipping by offering fast, secure, and transparent delivery services tailored to your needs. Whether
+                    you're sending a single package or managing high-volume business deliveries, we're committed to
+                    providing a seamless experience from pickup to final destination.</p>
+            </div>
+        </div>
+    </div>
+    <div class="form-layout right">
+        <img src="/assets/images/brand-logo.png" class="brand-logo" alt="Amber Logistics" />
+        <div class="form-container">
+            <div style="text-align: center;">
+                <h3 class="form-title">Login Page</h3>
+                <p style="margin-top: 0.4rem;">Enter your login credentials to proceed.</p>
+            </div>
+
+            <form>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input class="form-input" placeholder="john.deo@example.com" type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input class="form-input" placeholder="Enter your password" type="password" />
+                </div>
+                <div>
+                    <a>Forgot Password?</a>
+                </div>
+                <div class="form-group">
+                    <button class="submit-btn">Proceed</button>
+                </div>
+            </form>
+        </div>
+        <div class="testimonies">
+            <div class="testimony-card">
+                <p class="content">We've used several delivery services over the years, but none have matched the speed
+                    and reliability we've experienced here. Every shipment arrives on time, and the tracking keeps us
+                    informed every step of the way.</p>
+                <div class="author">
+                    <img class="author-img"
+                        src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=987&auto=format&fit=crop" />
+                    <div>
+                        <p class="author">Sarah Thompson</p>
+                        <p class="author-role">Operations Manager</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony-card">
+                <p class="content">The entire shipping process is straightforward and stress-free. Our customers receive
+                    their orders faster, and we've seen a noticeable improvement in customer satisfaction since
+                    switching.</p>
+                <div class="author">
+                    <img class="author-img"
+                        src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=987&auto=format&fit=crop" />
+                    <div>
+                        <p class="author">Michael Rodriguez</p>
+                        <p class="author-role">E-commerce Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimony-card">
+                <p class="content">What impressed me most was the professionalism of the delivery team. They handled
+                    every package with care and kept me updated throughout the journey.</p>
+                <div class="author">
+                    <img class="author-img"
+                        src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=987&auto=format&fit=crop" />
+                    <div>
+                        <p class="author">Emily Carter</p>
+                        <p class="author-role">Small Business Owner</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimony-card">
+                <p class="content">Reliable deliveries are essential for our business, and this platform consistently delivers on its promises. Their support team is responsive, and we've never had to worry about delayed shipments.</p>
+                <div class="author">
+                    <img class="author-img"
+                        src="https://plus.unsplash.com/premium_photo-1671656349218-5218444643d8?q=80&w=987&auto=format&fit=crop" />
+                    <div>
+                        <p class="author">David Kim</p>
+                        <p class="author-role">Supply Chain Coordinator</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
